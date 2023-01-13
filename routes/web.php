@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,3 +49,9 @@ Route::get('/admin/product/add', function () {
         "title" => "Add Product"
     ]);
 });
+
+Route::get('/admin/category', [CategoryController::class, 'index_admin']);
+
+Route::get('/admin/category/add', [CategoryController::class, 'add']);
+
+Route::post('/admin/category/store', [CategoryController::class, 'store']);

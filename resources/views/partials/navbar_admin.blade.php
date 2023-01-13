@@ -13,7 +13,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ $title === 'Products' ? 'active' : '' }}" aria-current="page"
-                        href="/products">Products</a>
+                        href="/admin/product">Products</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -21,8 +21,10 @@
                         Manage Item
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">View Item</a>
+                        <a class="dropdown-item" href="/admin/product">View Item</a>
                         <a class="dropdown-item" href="/admin/product/add">Add Item</a>
+                        <a class="dropdown-item" href="/admin/category">View Category</a>
+                        <a class="dropdown-item" href="/admin/category/add">Add Category</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

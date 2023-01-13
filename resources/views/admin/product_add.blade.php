@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('container')
-    <h1>Add Product</h1>
+    <h1>{{ $title }}</h1>
     <div class="card">
         <div class="card-body">
             <form>
