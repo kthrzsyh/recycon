@@ -6,8 +6,12 @@
             <h1>{{ $title }}</h1>
         </div>
         <div class="col-3"><a href="/admin/category/add" class="btn btn-primary">Add</a></div>
-
     </div>
+    @if (session('status'))
+        <div class="result">
+            <div class="alert alert-primary">{{ session('status') }}</div>
+        </div>
+    @endif
 
     <table class="table table-bordered">
         <thead>
@@ -23,7 +27,9 @@
                     <td>{{ $no++ }}</td>
                     <td>{{ $category->category_name }}</td>
                     <td>
-                        <a href="#" class="btn btn-success">Edit</a>
+                        <a href="/admin/category/edit/{{ $category->id }}"class="btn btn-success">Edit</a>
+                        <a href="/admin/category/delete/{{ $category->id }}"class="btn btn-danger"
+                            onclick="return confirm('Anda Yakin Menghapus Data?')">Delete</a>
                     </td>
                 </tr>
             @endforeach

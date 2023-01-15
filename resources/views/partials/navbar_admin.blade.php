@@ -13,7 +13,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ $title === 'Products' ? 'active' : '' }}" aria-current="page"
-                        href="/admin/product">Products</a>
+                        href="/admin/product_home">Products</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
